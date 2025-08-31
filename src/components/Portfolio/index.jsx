@@ -1,11 +1,33 @@
-import {MainContainer, TagLine, Profile, Avatar, InfoDiv, Name, HeadLine, Quote} from './styledComponents'
+import {
+    MainContainer,
+    TagLine,
+    Profile,
+    Avatar, 
+    InfoDiv, 
+    Name, 
+    HeadLine, 
+    Quote, 
+    Section,
+    DivFlexColumn, 
+    SectionHeading, 
+    Description,
+    ProjectList,
+    ProjectLI,
+    ProjectImg,
+    ProjectInfoDiv,
+    SecSubHeading,
+    SecDescription
+} from './styledComponents'
+import { User, Award, Code, Cpu, Briefcase, Mail, Home, FileText, School} from "lucide-react";
+
 
 const Portfolio = () => (
     <MainContainer>
-        <TagLine><Quote>
-      Everything has a <span>solution</span> if you are <span>willing</span> to find it.
-    </Quote>
-</TagLine>
+        <TagLine>
+            <Quote>
+                Everything has a <span>solution</span> if you are <span>willing</span> to find it.
+            </Quote>
+        </TagLine>
         <Profile>
             <Avatar src="data:image/jpeg;base64,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"/>
             <InfoDiv>
@@ -13,6 +35,46 @@ const Portfolio = () => (
                 <HeadLine>Engineering Student (AI & DS) | Full-Stack Developer (MERN) | React.js | SQL | Data Science Enthusiast</HeadLine>
             </InfoDiv>
         </Profile>
+
+        {/* About Section */}
+
+        <Section>
+            <DivFlexColumn>
+                <User color="#4b156c" size={26} />
+                <SectionHeading>About</SectionHeading>
+            </DivFlexColumn>
+                <Description>I am a passionate Engineering Student in AI & DS (DY Patil Institute of Technology) and a Full-Stack Developer (MERN) with hands-on experience in building responsive, secure, and user-friendly applications.</Description>
+        </Section>
+
+        {/* About Section */}
+
+            <Section>
+                <DivFlexColumn>
+                    <Code color="#4b156c" size={26} />
+                    <SectionHeading>Projects</SectionHeading>
+                </DivFlexColumn>
+                <ProjectList>
+                    <ProjectLI>
+                        <ProjectImg src="https://img.freepik.com/free-vector/coding-website-development-technical-support-programming-engineering-coder-web-developer-computer-software-programmer-male-flat-character_335657-2636.jpg?w=360" alt="Img"/>
+                        <ProjectInfoDiv>
+                            <SecSubHeading>Web Shope</SecSubHeading>
+                            <SecDescription>
+                                I am a passionate Engineering Student in AI & DS and a Full-Stack Developer (MERN) with hands-on experience in building user-friendly applications.
+                            </SecDescription>
+                        </ProjectInfoDiv>
+                    </ProjectLI>
+                </ProjectList>
+            </Section>
+
+        {/* About Section */}
+
+            <Section>
+                <DivFlexColumn>
+                    <School color="#4b156c" size={26} />
+                    <SectionHeading>Education</SectionHeading>
+                </DivFlexColumn>
+            </Section>
+        
     </MainContainer>
 )
 

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const MainContainer = styled.div`
   min-height: 100vh;
   width: 100vw;
+  font-family: 'Inter', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,3 +85,50 @@ export const Quote = styled.blockquote`
     color: #ff8800ff;
   }
 `;
+
+export const Section = styled.div`
+  width: 800px;
+  margin-top: 22px;
+`
+export const DivFlexColumn = styled.div`
+  display: flex;
+  align-items: center;
+`
+export const SectionHeading = styled.div`
+  font-size: 1rem;
+  font-weight: 600;
+  margin-left: 12px;
+`
+
+export const Description = styled.p`
+  font-size: 0.75rem;
+  color: #B0B0B0;
+  margin-left: 8px;
+`
+export const ProjectList = styled.ul`
+  list-style-type: none;
+  padding-left: 0;
+`
+export const ProjectLI = styled.li`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+`
+export const ProjectImg = styled.img`
+  width: 80px;
+  border-radius: 12px;
+`
+export const ProjectInfoDiv = styled.div`
+  padding-left: 12px;
+`
+export const SecSubHeading = styled.p`
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 0;
+`
+export const SecDescription = styled.p`
+  font-size: 0.75rem;
+  color: #716C89;
+  margin: 0px;
+`
