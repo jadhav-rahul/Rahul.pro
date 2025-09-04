@@ -25,6 +25,7 @@ import {
   EduImg,
   EduInfo,
   SkillsGrid,
+  SkillsHeading,
   SkillS,
 } from "./styledComponents";
 import { UserRound, CodeXml, Target, GraduationCap } from "lucide-react";
@@ -52,7 +53,7 @@ const Portfolio = () => (
 
     <Section>
       <DivFlexColumn>
-        <UserRound color="#ffffffff" size={20} />
+        <UserRound color="#ffffffff" size={22} strokeWidth={3} />
         <SectionHeading>About</SectionHeading>
       </DivFlexColumn>
       <Description>
@@ -66,7 +67,7 @@ const Portfolio = () => (
 
     <Section>
       <DivFlexColumn>
-        <CodeXml color="#ffffffff" size={20} />
+        <CodeXml color="#ffffffff" size={22} strokeWidth={3} />
         <SectionHeading>Projects</SectionHeading>
       </DivFlexColumn>
       <ProjectList>
@@ -91,7 +92,7 @@ const Portfolio = () => (
 
     <Section>
       <DivFlexColumn>
-        <GraduationCap color="#ffffffff" size={20} />
+        <GraduationCap color="#ffffffff" size={22} strokeWidth={3} />
         <SectionHeading>Education</SectionHeading>
       </DivFlexColumn>
       <EduList>
@@ -124,46 +125,46 @@ const Portfolio = () => (
 
     <Section>
       <DivFlexColumn>
-        <Target color="#ffffffff" size={20} />
+        <Target color="#ffffffff" size={22} strokeWidth={3} />
         <SectionHeading>Skills</SectionHeading>
       </DivFlexColumn>
       <SkillsGrid>
-        <SecSubHeading>Programming:</SecSubHeading>
+        <SkillsHeading>Programming:</SkillsHeading>
         <SkillS>
           Python <b>·</b> C++ <b>·</b> JavaScript <b>·</b> (DSA)
         </SkillS>
       </SkillsGrid>
 
       <SkillsGrid>
-        <SecSubHeading>Front-End:</SecSubHeading>
+        <SkillsHeading>Front-End:</SkillsHeading>
         <SkillS>
           React.js <b>·</b> HTML <b>·</b> CSS <b>·</b> Responsive Design
         </SkillS>
       </SkillsGrid>
 
       <SkillsGrid>
-        <SecSubHeading>Back-End:</SecSubHeading>
+        <SkillsHeading>Back-End:</SkillsHeading>
         <SkillS>
           Node.js <b>·</b> Express.js <b>·</b> REST APIs
         </SkillS>
       </SkillsGrid>
 
       <SkillsGrid>
-        <SecSubHeading>Databases:</SecSubHeading>
+        <SkillsHeading>Databases:</SkillsHeading>
         <SkillS>
           SQL <b>·</b> MongoDB
         </SkillS>
       </SkillsGrid>
 
       <SkillsGrid>
-        <SecSubHeading>Tools:</SecSubHeading>
+        <SkillsHeading>Tools:</SkillsHeading>
         <SkillS>
           Git <b>·</b> GitHub <b>·</b> VS Code <b>·</b> Chrome DevTools
         </SkillS>
       </SkillsGrid>
 
       <SkillsGrid>
-        <SecSubHeading>SoftSkills:</SecSubHeading>
+        <SkillsHeading>SoftSkills:</SkillsHeading>
         <SkillS>
           Logical Thinking <b>·</b> Communication <b>·</b> Team Work
         </SkillS>

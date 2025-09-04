@@ -3,9 +3,10 @@ import styled from "styled-components";
 export const MainContainer = styled.div`
   box-sizing: border-box;
   overflow-x: hidden;
+  line-height: 1.6;
   min-height: 100vh;
   width: 100vw;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter";
   display: flex;
   flex-direction: column;
   padding: 32px;
@@ -14,10 +15,10 @@ export const MainContainer = styled.div`
 
 export const TagLine = styled.h1`
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 200;
   color: #ffffff;
-  font-family: "Roboto";
+  font-family: "Inter";
   span {
     color: #ff8800ff;
   }
@@ -55,28 +56,30 @@ export const Name = styled.h1`
 `;
 
 export const HeadLine = styled.p`
-  font-size: 14px;
+  font-size: 0.9rem;
   margin: 5px 0 0 0;
+  color: #b0b0b0;
 `;
 
 export const Section = styled.div`
-  margin-top: 22px;
+  margin-top: 38px;
 `;
 export const DivFlexColumn = styled.div`
   display: flex;
   align-items: center;
-  margin-bottom: 6px;
+  margin-bottom: 12px;
 `;
 export const SectionHeading = styled.div`
-  font-size: 0.9rem;
-  font-weight: 500;
-  margin-left: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-left: 6px;
 `;
 
 export const Description = styled.p`
   font-size: 0.75rem;
   color: #b0b0b0;
   margin: 0;
+  padding-left: 6px;
 `;
 export const ProjectList = styled.ul`
   list-style-type: none;
@@ -86,9 +89,10 @@ export const ProjectList = styled.ul`
 export const ProjectLI = styled.li`
   display: flex;
   align-items: start;
+  padding-left: 6px;
 `;
 export const ProjectImg = styled.img`
-  width: 42px;
+  width: 46px;
   background-color: #ffffff;
   border-radius: 8px;
   padding: 4px;
@@ -103,7 +107,7 @@ export const SecSubHeading = styled.p`
 `;
 export const SecDescription = styled.p`
   font-size: 0.75rem;
-  color: #716c89;
+  color: #b0b0b0;
   margin: 0px;
 `;
 
@@ -115,11 +119,11 @@ export const EduList = styled.ul`
 `;
 export const EduCard = styled.li`
   display: flex;
-  padding: 0 0 10px 0;
+  padding: 0 0 10px 6px;
   align-items: start;
 `;
 export const EduImg = styled.img`
-  width: 42px;
+  width: 46px;
   background-color: #ffffff;
   border-radius: 8px;
   padding: 4px;
@@ -130,7 +134,16 @@ export const EduInfo = styled.div`
 export const SkillsGrid = styled.div`
   display: flex;
   align-items: start;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
+`;
+
+export const SkillsHeading = styled.p`
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 0;
+  min-width: 9px;
+  padding-right: 6px;
+  padding-left: 6px;
 `;
 
 export const SkillS = styled.p`
