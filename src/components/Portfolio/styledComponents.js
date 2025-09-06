@@ -133,7 +133,7 @@ export const EduInfo = styled.div`
 `;
 export const SkillsGrid = styled.div`
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   margin-bottom: 8px;
 `;
 
