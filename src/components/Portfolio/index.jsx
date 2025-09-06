@@ -1,175 +1,37 @@
-import mypic5 from "../../assets/mypic5.jpg";
-import DypLogo from "../../assets/DypLogo.png";
-import nxtWaveLogo from "../../assets/nxtWaveLogo.webp";
+import Profile from "../Profile";
+import About from "../About";
+import Projects from "../Projects";
+import Education from "../Education";
+import Skills from "../Skills";
 
-import {
-  MainContainer,
-  TagLine,
-  Profile,
-  Avatar,
-  InfoDiv,
-  Name,
-  HeadLine,
-  Section,
-  DivFlexColumn,
-  SectionHeading,
-  Description,
-  ProjectList,
-  ProjectLI,
-  ProjectImg,
-  ProjectInfoDiv,
-  SecSubHeading,
-  SecDescription,
-  EduList,
-  EduCard,
-  EduImg,
-  EduInfo,
-  SkillsGrid,
-  SkillsHeading,
-  SkillS,
-} from "./styledComponents";
-import { UserRound, CodeXml, Target, GraduationCap } from "lucide-react";
+import { MainContainer, TagLine } from "./styledComponents";
+
+const TagLineText = () => (
+  <TagLine>
+    <q>
+      Everything has a <span>solution</span> if you are <span>willing</span> to
+      find it.
+    </q>
+  </TagLine>
+);
 
 const Portfolio = () => (
   <MainContainer>
-    <TagLine>
-      <q>
-        Everything has a <span>solution</span> if you are <span>willing</span>{" "}
-        to find it.
-      </q>
-    </TagLine>
-    <Profile>
-      <Avatar src={mypic5} />
-      <InfoDiv>
-        <Name>Rahul U. Jadhav</Name>
-        <HeadLine>
-          Engineering Student (AI & DS) | Full-Stack Developer (MERN) | React.js
-          | SQL | Data Science Enthusiast
-        </HeadLine>
-      </InfoDiv>
-    </Profile>
+    <TagLineText />
+    {/* Profile Section */}
+    <Profile />
 
     {/* About Section */}
-
-    <Section>
-      <DivFlexColumn>
-        <UserRound color="#ffffffff" size={22} strokeWidth={3} />
-        <SectionHeading>About</SectionHeading>
-      </DivFlexColumn>
-      <Description>
-        I am a passionate Engineering Student in AI & DS (DY Patil Institute of
-        Technology) and a Full-Stack Developer (MERN) with hands-on experience
-        in building responsive, secure, and user-friendly applications.
-      </Description>
-    </Section>
+    <About />
 
     {/* Project Section */}
-
-    <Section>
-      <DivFlexColumn>
-        <CodeXml color="#ffffffff" size={22} strokeWidth={3} />
-        <SectionHeading>Projects</SectionHeading>
-      </DivFlexColumn>
-      <ProjectList>
-        <ProjectLI>
-          <ProjectImg
-            src="https://img.freepik.com/free-vector/coding-website-development-technical-support-programming-engineering-coder-web-developer-computer-software-programmer-male-flat-character_335657-2636.jpg?w=360"
-            alt="Img"
-          />
-          <ProjectInfoDiv>
-            <SecSubHeading>Web Shope</SecSubHeading>
-            <SecDescription>
-              I am a passionate Engineering Student in AI & DS and a Full-Stack
-              Developer (MERN) with hands-on experience in building
-              user-friendly applications.
-            </SecDescription>
-          </ProjectInfoDiv>
-        </ProjectLI>
-      </ProjectList>
-    </Section>
+    <Projects />
 
     {/* Education Section */}
-
-    <Section>
-      <DivFlexColumn>
-        <GraduationCap color="#ffffffff" size={22} strokeWidth={3} />
-        <SectionHeading>Education</SectionHeading>
-      </DivFlexColumn>
-      <EduList>
-        <EduCard>
-          <EduImg src={nxtWaveLogo} alt="logo" />
-          <EduInfo>
-            <SecSubHeading>NxtWave CCBP 4.0 Academy</SecSubHeading>
-            <SecDescription>
-              Certified in Full-Stack Development, Databases, Data Structures &
-              Algorithms, and Data Science
-            </SecDescription>
-          </EduInfo>
-        </EduCard>
-
-        <EduCard>
-          <EduImg src={DypLogo} alt="logo" />
-          <EduInfo>
-            <SecSubHeading>
-              Dr. D. Y. Patil Institute of Technology, Pimpri
-            </SecSubHeading>
-            <SecDescription>
-              B.E. Artificial Intelligence & Data Science
-            </SecDescription>
-          </EduInfo>
-        </EduCard>
-      </EduList>
-    </Section>
+    <Education />
 
     {/* Skills Section */}
-
-    <Section>
-      <DivFlexColumn>
-        <Target color="#ffffffff" size={22} strokeWidth={3} />
-        <SectionHeading>Skills</SectionHeading>
-      </DivFlexColumn>
-      <SkillsGrid>
-        <SkillsHeading>Programming:</SkillsHeading>
-        <SkillS>
-          Python <b>·</b> C++ <b>·</b> JavaScript <b>·</b> (DSA)
-        </SkillS>
-      </SkillsGrid>
-
-      <SkillsGrid>
-        <SkillsHeading>Front-End:</SkillsHeading>
-        <SkillS>
-          React.js <b>·</b> HTML <b>·</b> CSS <b>·</b> Responsive Design
-        </SkillS>
-      </SkillsGrid>
-
-      <SkillsGrid>
-        <SkillsHeading>Back-End:</SkillsHeading>
-        <SkillS>
-          Node.js <b>·</b> Express.js <b>·</b> REST APIs
-        </SkillS>
-      </SkillsGrid>
-
-      <SkillsGrid>
-        <SkillsHeading>Databases:</SkillsHeading>
-        <SkillS>
-          SQL <b>·</b> MongoDB
-        </SkillS>
-      </SkillsGrid>
-
-      <SkillsGrid>
-        <SkillsHeading>Tools:</SkillsHeading>
-        <SkillS>
-          Git <b>·</b> GitHub <b>·</b> VS Code <b>·</b> Chrome DevTools
-        </SkillS>
-      </SkillsGrid>
-
-      <SkillsGrid>
-        <SkillsHeading>SoftSkills:</SkillsHeading>
-        <SkillS>
-          Logical Thinking <b>·</b> Communication <b>·</b> Team Work
-        </SkillS>
-      </SkillsGrid>
-    </Section>
+    <Skills />
   </MainContainer>
 );
 
