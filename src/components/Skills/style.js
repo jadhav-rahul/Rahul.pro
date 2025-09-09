@@ -17,6 +17,7 @@ export const SkillsGrid = styled.div`
   display: flex;
   align-items: flex-start;
   margin-bottom: 8px;
+  width: 338px;
 `;
 export const SkillsHeading = styled.p`
   font-size: 0.8rem;
@@ -24,7 +25,7 @@ export const SkillsHeading = styled.p`
   margin: 0;
   min-width: 9px;
   padding-right: 6px;
-  width: 100px;
+  width: 120px;
   padding-left: 6px;
 `;
 
@@ -32,4 +33,6 @@ export const SkillS = styled.p`
   font-size: 0.75rem;
   color: #716c89;
   margin: 0px;
+  width: 220px;
+  margin-left: auto;
 `;

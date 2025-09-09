@@ -15,13 +15,14 @@ export const SectionHeading = styled.div`
 `;
 export const ProjectList = styled.ul`
   list-style-type: none;
-  padding-left: 0;
-  margin: 0;
+  padding-left: 0px;
+  gap: 20px;
+  margin: 0px;
 `;
 export const ProjectLI = styled.li`
   display: flex;
+  padding: 0 0 10px 6px;
   align-items: start;
-  padding-left: 6px;
 `;
 export const ProjectImg = styled.img`
   width: 46px;

@@ -4,7 +4,7 @@ import Projects from "../Projects";
 import Education from "../Education";
 import Skills from "../Skills";
 
-import { MainContainer, TagLine } from "./styledComponents";
+import { MainContainer, TagLine, GlobalStyle } from "./styledComponents";
 
 const TagLineText = () => (
   <TagLine>
@@ -16,23 +16,26 @@ const TagLineText = () => (
 );
 
 const Portfolio = () => (
-  <MainContainer>
-    <TagLineText />
-    {/* Profile Section */}
-    <Profile />
+  <>
+    <GlobalStyle />
+    <MainContainer>
+      <TagLineText />
+      {/* Profile Section */}
+      <Profile />
 
-    {/* About Section */}
-    <About />
+      {/* About Section */}
+      <About />
 
-    {/* Project Section */}
-    <Projects />
+      {/* Education Section */}
+      <Education />
 
-    {/* Education Section */}
-    <Education />
+      {/* Project Section */}
+      <Projects />
 
-    {/* Skills Section */}
-    <Skills />
-  </MainContainer>
+      {/* Skills Section */}
+      <Skills />
+    </MainContainer>
+  </>
 );
 
 export default Portfolio;

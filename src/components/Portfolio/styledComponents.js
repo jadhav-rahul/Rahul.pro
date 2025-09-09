@@ -1,4 +1,17 @@
-import styled from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
+
+export const GlobalStyle = createGlobalStyle`
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+`;
 
 export const MainContainer = styled.div`
   box-sizing: border-box;
@@ -11,6 +24,7 @@ export const MainContainer = styled.div`
   flex-direction: column;
   padding: 32px;
   background-color: rgba(0, 0, 0, 1);
+  background-size: cover;
 `;
 
 export const TagLine = styled.h1`

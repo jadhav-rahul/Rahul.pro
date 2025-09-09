@@ -1,10 +1,19 @@
 import mypic5 from "../../assets/mypic5.jpg";
 
-import { MyProfile, Avatar, InfoDiv, Name, HeadLine } from "./style";
+import {
+  MyProfile,
+  ImgContainer,
+  Avatar,
+  InfoDiv,
+  Name,
+  HeadLine,
+} from "./style";
 
 const Profile = () => (
   <MyProfile>
-    <Avatar src={mypic5} />
+    <ImgContainer>
+      <Avatar src={mypic5} />
+    </ImgContainer>
     <InfoDiv>
       <Name>Rahul U. Jadhav</Name>
       <HeadLine>

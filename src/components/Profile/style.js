@@ -1,4 +1,13 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const bounce = keyframes`
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px); /* Moves up slightly */
+  }
+`;
 
 export const MyProfile = styled.div`
   width: 100%;
@@ -12,12 +21,19 @@ export const MyProfile = styled.div`
   );
 `;
 
+export const ImgContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 export const Avatar = styled.img`
   width: 75px;
   height: 75px;
   border-radius: 50%;
   border: 2px solid #ffffff;
   margin-bottom: 20px;
+  animation: ${bounce} 3s ease-in-out infinite;
 `;
 
 export const InfoDiv = styled.div`
