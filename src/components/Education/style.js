@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const Section = styled.div`
   margin-top: 38px;
+  @media (min-width: 1024px) {
+    width: 56vw;
+  }
 `;
 export const DivFlexColumn = styled.div`
   display: flex;
@@ -29,11 +32,20 @@ export const EduList = styled.ul`
   padding-left: 0px;
   gap: 20px;
   margin: 0px;
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 `;
 export const EduCard = styled.li`
   display: flex;
   padding: 0 0 10px 6px;
   align-items: start;
+  @media (min-width: 1024px) {
+    width: 48%;
+  }
 `;
 export const EduImg = styled.img`
   width: 46px;

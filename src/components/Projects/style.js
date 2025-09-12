@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const Section = styled.div`
   margin-top: 38px;
+  @media (min-width: 1024px) {
+    width: 56vw;
+  }
 `;
 export const DivFlexColumn = styled.div`
   display: flex;
@@ -18,17 +21,28 @@ export const ProjectList = styled.ul`
   padding-left: 0px;
   gap: 20px;
   margin: 0px;
+
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: space-between;
+  }
 `;
 export const ProjectLI = styled.li`
   display: flex;
   padding: 0 0 10px 6px;
-  align-items: start;
+  align-items: flex-start;
+
+  @media (min-width: 1024px) {
+    width: 48%;
 `;
 export const ProjectImg = styled.img`
   width: 46px;
+  height: 46px;
+  object-fit: cover;
   background-color: #ffffff;
   border-radius: 8px;
-  padding: 4px;
 `;
 export const ProjectInfoDiv = styled.div`
   padding-left: 12px;

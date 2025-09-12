@@ -25,6 +25,8 @@ export const MainContainer = styled.div`
   padding: 32px;
   background-color: rgba(0, 0, 0, 1);
   background-size: cover;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const TagLine = styled.h1`
@@ -37,4 +39,7 @@ export const TagLine = styled.h1`
     color: #ff8800ff;
   }
   margin-bottom: 40px;
+  @media (min-width: 1024px) {
+    width: 50vw;
+  }
 `;

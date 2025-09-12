@@ -1,38 +1,56 @@
+// style.js
 import styled from "styled-components";
 
 export const SkillsSection = styled.div`
   margin-top: 38px;
+  @media (min-width: 1024px) {
+    width: 56vw;
+  }
 `;
+
 export const SkillsDivFlexColumn = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 12px;
 `;
+
 export const SkillsSectionHeading = styled.div`
   font-size: 1rem;
   font-weight: 600;
   margin-left: 6px;
 `;
-export const SkillsGrid = styled.div`
+
+export const SkillsGrid = styled.li`
   display: flex;
   align-items: flex-start;
   margin-bottom: 8px;
-  width: 338px;
 `;
+
 export const SkillsHeading = styled.p`
   font-size: 0.8rem;
   font-weight: 600;
   margin: 0;
   min-width: 9px;
   padding-right: 6px;
-  width: 120px;
+  width: 100px;
   padding-left: 6px;
 `;
 
 export const SkillS = styled.p`
   font-size: 0.75rem;
   color: #716c89;
-  margin: 0px;
-  width: 220px;
-  margin-left: auto;
+  margin: 0;
+  flex: 1;
+`;
+
+export const SkillsLI = styled.ul`
+  width: 100%;
+  list-style-type: none;
+  padding-left: 0;
+
+  @media (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 32px;
+  }
 `;

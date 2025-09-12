@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const Section = styled.div`
   margin-top: 38px;
+  @media (min-width: 1024px) {
+    width: 56vw;
+  }
 `;
 export const DivFlexColumn = styled.div`
   display: flex;

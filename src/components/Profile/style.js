@@ -19,6 +19,11 @@ export const MyProfile = styled.div`
     rgba(75, 21, 108, 0.1) 50%,
     rgba(0, 0, 0, 0) 80%
   );
+  @media (min-width: 1024px) {
+    width: 56vw;
+    flex-direction: row;
+    align-items: center;
+  }
 `;
 
 export const ImgContainer = styled.div`
@@ -34,6 +39,10 @@ export const Avatar = styled.img`
   border: 2px solid #ffffff;
   margin-bottom: 20px;
   animation: ${bounce} 3s ease-in-out infinite;
+  @media (min-width: 1024px) {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
 `;
 
 export const InfoDiv = styled.div`

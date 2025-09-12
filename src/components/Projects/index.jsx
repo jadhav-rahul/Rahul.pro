@@ -1,3 +1,10 @@
+import shopProImg from "../../assets/shopProImg.jpg";
+import pswImg from "../../assets/pswImg.jpg";
+import cricImg from "../../assets/cricImg.png";
+import taskManagerImg from "../../assets/taskManagerImg.png";
+import RPSImg from "../../assets/RPSImg.jpeg";
+import NotesImg from "../../assets/NotesImg.jpg";
+
 import {
   Section,
   DivFlexColumn,
@@ -20,10 +27,7 @@ const Projects = () => (
     </DivFlexColumn>
     <ProjectList>
       <ProjectLI>
-        <ProjectImg
-          src="https://img.freepik.com/free-vector/coding-website-development-technical-support-programming-engineering-coder-web-developer-computer-software-programmer-male-flat-character_335657-2636.jpg?w=360"
-          alt="Img"
-        />
+        <ProjectImg src={shopProImg} alt="Img" />
         <ProjectInfoDiv>
           <SecSubHeading>
             Nxt Trendz
@@ -49,15 +53,38 @@ const Projects = () => (
         </ProjectInfoDiv>
       </ProjectLI>
       <ProjectLI>
-        <ProjectImg
-          src="https://img.freepik.com/free-vector/coding-website-development-technical-support-programming-engineering-coder-web-developer-computer-software-programmer-male-flat-character_335657-2636.jpg?w=360"
-          alt="Img"
-        />
+        <ProjectImg src={pswImg} alt="Img" />
+        <ProjectInfoDiv>
+          <SecSubHeading>
+            Password Manager
+            <a
+              href="https://pswmanager11.ccbp.tech"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: "#007bff",
+                position: "relative",
+                top: "1px",
+                marginLeft: "6px",
+              }}
+            >
+              <FaExternalLinkAlt size={12} />
+            </a>
+          </SecSubHeading>
+          <SecDescription>
+            A responsive React app to securely store, search, and manage website
+            credentials with password masking, easy navigation, and a
+            user-friendly interface.
+          </SecDescription>
+        </ProjectInfoDiv>
+      </ProjectLI>
+      <ProjectLI>
+        <ProjectImg src={cricImg} alt="Img" />
         <ProjectInfoDiv>
           <SecSubHeading>
             Cricket Analysis Dashboard
             <a
-              href="https://yourprojectlink.com"
+              href="https://ipl11dashboard.ccbp.tech"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -71,22 +98,18 @@ const Projects = () => (
             </a>
           </SecSubHeading>
           <SecDescription>
-            I am a passionate Engineering Student in AI & DS and a Full-Stack
-            Developer (MERN) with hands-on experience in building user-friendly
-            applications.
+            A responsive Dashboard showing IPL teams, latest matches, and stats
+            with dynamic routing, API integration, and smooth user experience.
           </SecDescription>
         </ProjectInfoDiv>
       </ProjectLI>
       <ProjectLI>
-        <ProjectImg
-          src="https://img.freepik.com/free-vector/coding-website-development-technical-support-programming-engineering-coder-web-developer-computer-software-programmer-male-flat-character_335657-2636.jpg?w=360"
-          alt="Img"
-        />
+        <ProjectImg src={taskManagerImg} alt="Img" />
         <ProjectInfoDiv>
           <SecSubHeading>
             Advanced Task Organizer
             <a
-              href="https://yourprojectlink.com"
+              href="https://taskmanager11.ccbp.tech"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -107,15 +130,12 @@ const Projects = () => (
         </ProjectInfoDiv>
       </ProjectLI>
       <ProjectLI>
-        <ProjectImg
-          src="https://img.freepik.com/free-vector/coding-website-development-technical-support-programming-engineering-coder-web-developer-computer-software-programmer-male-flat-character_335657-2636.jpg?w=360"
-          alt="Img"
-        />
+        <ProjectImg src={RPSImg} alt="Img" />
         <ProjectInfoDiv>
           <SecSubHeading>
             Rock Papper Scissor Game
             <a
-              href="https://yourprojectlink.com"
+              href="https://winifyoucan11.ccbp.tech"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -136,10 +156,7 @@ const Projects = () => (
         </ProjectInfoDiv>
       </ProjectLI>
       <ProjectLI>
-        <ProjectImg
-          src="https://img.freepik.com/free-vector/coding-website-development-technical-support-programming-engineering-coder-web-developer-computer-software-programmer-male-flat-character_335657-2636.jpg?w=360"
-          alt="Img"
-        />
+        <ProjectImg src={NotesImg} alt="Img" />
         <ProjectInfoDiv>
           <SecSubHeading>
             Quick Notes

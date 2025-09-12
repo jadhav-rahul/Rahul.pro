@@ -3,6 +3,7 @@ import About from "../About";
 import Projects from "../Projects";
 import Education from "../Education";
 import Skills from "../Skills";
+import Certifications from "../Certifications";
 
 import { MainContainer, TagLine, GlobalStyle } from "./styledComponents";
 
@@ -34,6 +35,9 @@ const Portfolio = () => (
 
       {/* Skills Section */}
       <Skills />
+
+      {/* Certifications Section */}
+      <Certifications />
     </MainContainer>
   </>
 );
